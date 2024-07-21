@@ -1,14 +1,9 @@
 'use strict';
 // FAQ
-const showAnswer = document.querySelectorAll('.answer');
-const question = document.querySelectorAll('.question-content');
+const clickNav = document.querySelector('.navbar-btn');
+const showNavList = document.querySelector('.nav-list');
 
-question.addEventListener('click', () => {
-  showAnswer.forEach((e) => {
-    removeHidden();
-  });
+clickNav.addEventListener('click', () => {
+  showNavList.classList.toggle('active');
 });
 
-function removeHidden() {
-  
-}
